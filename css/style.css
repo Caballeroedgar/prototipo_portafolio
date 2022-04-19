@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --main-color:#87fa44;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding-left: 30rem;
+}
+
+section{
+    padding:1rem 5%;
+    min-height: 100vh;
+}
+
+.heading{
+    font-size: 4rem;
+    padding-bottom: 1rem;
+    color:#111;
+    text-transform: uppercase;
+}
+
+.heading span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+#titulo{
+    color:black;
+    font-size: 30px;
+    padding-left: 25px;
+    padding-bottom: 60px;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--main-color);
+    color:#fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background:#111;
+    letter-spacing: .2rem;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; bottom:0;
+    text-align: left;
+    border-right: 1px solid gray;
+    display: flex;
+
+    flex-flow: column;
+    padding:8rem 2rem;
+    width:30rem;
+   
+}
+
+
+
+
+img {
+  
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: top;
+
+}
+
+.navbar a{
+    display: block;
+    font-size: 1rem;
+    color:rgb(0, 0, 0);
+    margin:2rem 0;
+}
+
+.navbar a:hover{
+    letter-spacing: .2rem;
+    color:var(--main-color);
+}
+
+
+header .navbar a{
+    display: block;
+    font-size: 2rem;
+    color:rgb(0, 0, 0);
+    margin:2rem 0;
+
+}
+
+
+
+
+
+#menu-bars{
+    position: fixed;
+    top:1rem; right: 1rem;
+    z-index: 10000;
+    background:var(--main-color);
+    color:#fff;
+    border-radius: .5rem;
+    padding:1rem 1.5rem;
+    font-size: 3rem;
+    cursor:pointer;
+    display: none;
+}
+.revistadigital{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.revistadigital__imagen{
+    flex:1 1 40rem;
+}
+
+.imagen{
+    width:100%;
+}
+
+.revistadigital__texto{
+    flex:1 1 40rem;
+}
+
+
+.revistadigital__saludo{
+    font-size: 2rem;
+    color:var(--main-color);
+}
+
+.revistadigital h3 span{
+    color:var(--main-color);
+    text-transform: uppercase;
+}
+
+.revistadigital__parrafos{
+    font-size: 1.7rem;
+    color:#fff;
+    padding:.5rem 0;
+}
+
+.revistadigital__subtitulo{
+    font-size: 2.5rem;
+    color:#111;
+    padding:.5rem 0;
+}
+
+.favoritos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
+}
+
+.favoritos__imagen {
+    flex:1 1 25rem;
+}
+
+.favoritos__imagen img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border:1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.favoritos__textos{
+    flex:1 1 50rem;
+}
+
+.favoritos__detalles{
+    color:#111;
+    font-size: 3.5rem;
+}
+
+.favoritos__parrafo{
+    color:#fff;
+    font-size: 1.7rem;
+    padding:.5rem 0;
+}
+
+.favoritos__datos{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 0.5rem 0;
+}
+
+.favoritos__box{
+    flex:1 1 20rem;
+}
+
+.favoritos__box span{
+    color:var(--main-color);
+}
+.favoritos__box p{
+    color:var(--main-color);
+    color:#fff;
+    font-size: 1.7rem;
+    padding:.5rem 0;
+}
+
+.about .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    align-items: center;
+}
+
+.about .row-2 .skills{
+    flex:1 1 40rem;
+}
+
+.Suscripciones__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.box{
+    flex:1 1 30rem;
+    text-align: center;
+    padding:2rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.box i{
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color:#fff;
+    background:var(--main-color);
+    border-radius: 50%;
+}
+
+.box h3{
+    color:#111;
+    font-size: 2.2rem;
+    padding-top: 1rem;
+}
+
+.box p{
+    color:#111;
+    font-size: 1.7rem;
+    padding-top: .5rem;
+}
+
+
+.icons{
+    position: absolute;
+    top:1rem; right:1rem;
+}
+
+.icons a{
+    display: block;
+    height:4rem;
+    width:4rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:#333;
+    font-size: 1.7rem;
+    line-height: 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.icons a:hover{
+    background:var(--main-color);
+    color:#fff;
+}
+
+.iconos__container{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.iconos{
+    flex:1 1 25rem;
+    text-align: center;
+    padding:2rem;
+    background:#fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+}
+
+.iconos i{
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+  
+    color:#fff;
+    border-radius: 50%;
+}
+
+.iconos h3{
+    color:#111;
+    font-size: 2rem;
+    padding:.5rem 0;
+    padding-top: 1rem;
+}
+
+.iconos p{
+    color:#666;
+    font-size: 1.7rem;
+}
+
+
+
+.datos__container{
+    color: rgb(78, 78, 78);
+     flex:1 1 40rem;
+     
+     position: absolute;
+     right: 20%;
+}
+
+
+form{
+   
+    background:#fff;
+    padding:0 2rem;
+  
+}
+
+form .box,
+.contact .row form textarea{
+    width: 50%;
+    
+    color:rgb(92, 91, 91);
+    text-transform: none;
+    font-size: 1.7rem;
+    padding:1rem 0;
+    margin:1rem 0;
+}
+
+form ::placeholder{
+background: rgb(226, 224, 224);
+text-align: left;
+}
+
+form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+#icono{
+    width: 10%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+}
+
+
+
+
+.footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding:2.5rem;
+    text-align: center;
+  
+  
+}
+
+.footer span{
+    color:var(--main-color);
+
+}
+
+
+/* CSS PARA DISPOSITIVOS MOVIL */ 
+@media screen  and (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    
+    body{
+        padding: 0;
+    }
+
+    #menu-bars{
+        display: initial;
+    }
+
+    header{
+       width: 100%;
+       position: relative;
+    }
+
+    .datos__container{
+     right: 5%;
+    }
+    
+    #icono{
+        color: white;
+        position: relative;
+        left: 30%;
+        width: 20%;
+      
+    }
+
+ 
+
+}
+
